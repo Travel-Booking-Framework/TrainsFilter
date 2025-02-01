@@ -74,7 +74,7 @@ class DepartureTimeFilter(FilterStrategy):
 
 # Advanced Filters for Step 2
 # Advanced Filters for Step 2 (Merged into one class)
-class AdvancedFlightFilters:
+class AdvancedTrainFilters:
     @staticmethod
     def filter_by_price(Trains, min_price=None, max_price=None):
         pass
@@ -99,5 +99,5 @@ class AdvancedFlightFilters:
 # Main GraphQL Query
 class TrainsQuery(ObjectType):
 
-    def resolve_flights(self, info):
+    def resolve_trains(self, info):
         pass
